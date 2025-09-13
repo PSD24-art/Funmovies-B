@@ -48,11 +48,12 @@ router.post("/login", async (req, res) => {
     }
 
     const user = await User.findOne({ email });
+    console.log(user);
     if (!user) {
       return res.status(400).json({ message: "Invalid credentials" });
     }
 
-    const validPassword = await bcrypt.compare(password, user.password);
+    const validPassword = bcrypt.compare(password, user.password);
     if (!validPassword) {
       return res.status(400).json({ message: "Invalid credentials" });
     }

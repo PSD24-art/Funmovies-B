@@ -26,4 +26,4 @@ const addMovies = async () => {
   let result = await Movie.insertMany(data, { ordered: false });
 };
 
-addMovies();
+// addMovies();
