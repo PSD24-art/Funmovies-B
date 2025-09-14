@@ -1,4 +1,4 @@
-# Movie Review Platform – Backend
+# Movie Review Platform
 
 This is the **Readme** for the Movie Review Platform built using **Node.js, Express, and MongoDB**.  
 It handles authentication, user management.
