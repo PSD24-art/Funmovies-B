@@ -6,8 +6,8 @@ const movieSchema = new mongoose.Schema({
   adult: { type: Boolean, default: false },
   overview: { type: String },
   release_date: { type: String },
-  genre_ids: [{ type: Number }], // TMDb genre IDs
-  tmdbId: { type: Number, required: true }, // TMDb ID
+  genre_ids: [{ type: Number }],
+  tmdbId: { type: Number, required: true }, 
   original_title: { type: String },
   original_language: String,
   title: { type: String, required: true },

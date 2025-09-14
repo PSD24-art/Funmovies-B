@@ -14,9 +14,10 @@ const reviewRoutes = require("./routes/reviewRoutes");
 app.use("/movies", movieRoutes);
 app.use("/users", userRoutes);
 app.use("/reviews", reviewRoutes);
+
 app.use(
   cors({
-    origin: "http://localhost:5173/",
+    origin: "https://funmovies-fe.onrender.com",
     credentials: true,
   })
 );
